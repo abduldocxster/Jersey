@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="flex justify-between p-4 bg-gray-200 text-black">
-      <div><Link href="/empty">Nav</Link></div>
+      <div><Link href="/empty">Nav.</Link></div>
       <div>
         <Link href="/" className="mr-4  hover:underline">Home</Link>
         <Link href="/about" className="mr-4  hover:underline">About</Link>
