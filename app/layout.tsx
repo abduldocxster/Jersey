@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import "./ui/globals.css";
+import Footer from "@/components/Footer";
 
 export default function RootLayout({
   children,
@@ -8,10 +9,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-      >
-        <Navbar/>
-        {children}
+      <body className="flex flex-col min-h-screen">
+        <Navbar />
+        <div className="flex-grow">{children}</div>
+        <Footer />
       </body>
     </html>
   );
